@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>הנסיעות של א.ס</title>
+    <link rel="stylesheet"  href="test.css">
+</head>
+<body>
+    <header><h1>
+            פנינה היקרה תבחרי להיכן את רוצה לטוס
+    </h1>
+    </header>
+    <div class="mydiv">
+        <h3> הנסיעות </h3>
+    <table  dir="rtl">
+        <thead >
+            <tr>
+                <td>מספר נסיעה</td>
+                <td>יעדים</td>
+                <td>מחיר</td>
+            </tr>
+        </thead>
+        <tbody class= 'tableOpMyGoals'></tbody>
+    </table>
+    </div>
+    <div class="mydiv mydiv2" >
+            <h3> טופס הזמנה </h3>
+            <div ><span> full name שם מלא</span><br><input id="fullName" type="text"></div>
+            <div ><span>Travel code מספר נסיעה</span><br> 
+                <select class="findByNameDestestinationOrder" >
+                        <option value="1">isrel</option>
+                        <option value="2">United States</option>
+                        <option value="3">England</option>
+                        <option value="4">China</option>
+                        <option value="5">Morocco</option>
+                        <option value="6">Egypt</option>
+                </select>
+            </div>
+            <div ><span>ID תעודת זהות</span><br><input id="id" type="text"></div>
+            <div ><span>Number of passengers מספר נוסעים</span><br><input id="NumberOfPassengers" type="text"></div>
+            <button id="BookATrip" onclick="BookATrip()"> Book a trip   הזמן עכשיו</button>
+    </div>  
+    <div  class="mydiv">
+            <h3> הזמנות אחרונות </h3>
+        <table class="tableOpMyOrders" dir="rtl">
+            <thead >
+                <tr>
+                    <td>מספר הזמנה</td>
+                    <td>שם מזמין</td>
+                    <td>תז</td>
+                    <td>קוד נסיעה</td>
+                    <td>מספר נוסעים</td>
+                    <td>סהכ לתשלום</td>
+                </tr>
+            </thead>
+            <tbody class="tbodyOfTableOpMyOrders"></tbody>
+            
+        </table> 
+    </div>
+    <div  class="mydiv"> 
+            <h3> סינון תוצאות </h3>
+        <span>
+            <span>מצא עפ שם נוסע</span><br>
+            <input type="text" class="findByName"><br>
+            <button onclick='findByName()'>חיפוש</button><br>
+            <table class="tablefindByName"></table>
+        </span>
+        <br>
+        <span>
+            <span>סיכום הכנסות ע"פ יעד</span><br>
+            <button onclick='findByNameDestestination()'>חיפוש</button>
+            <select class="findByNameDestestination" >
+                    <option value="1">isrel</option>
+                    <option value="2">United States</option>
+                    <option value="3">England</option>
+                    <option value="4">China</option>
+                    <option value="5">Morocco</option>
+                    <option value="6">Egypt</option>
+            </select>
+            <span>בחר</span>
+            <br>
+            <span id="spunFindByNameDestestination"></span>
+        </span>
+    </div>
+    
+
+    <script src="test.js"></script>
+</body>
+</html>

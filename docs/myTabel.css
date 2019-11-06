@@ -1,0 +1,14 @@
+section{
+    text-align: center;
+    display: inline-block;
+    width: 38%;
+    height: 200px;
+    background-color: aquamarine;
+    margin:2% 5%;
+    border: 2px;
+    border-style: dotted ;
+    border-color: blue
+}
+#mydiv2{
+    display: none;
+}
