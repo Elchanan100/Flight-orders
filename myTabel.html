@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>הטבלה השניה של א.ס</title>
+    <link rel="stylesheet"  href="myTabel.css">
+      <!--  type="text/css" -->
+</head>
+<body>
+    <header>
+
+    </header>
+    <div>
+        <section id='myGoals'>
+            <table dir="rtl">
+                <thead>
+                    <tr>
+                        <td>קוד נסיעה </td>
+                        <td>שם נסיעה </td>
+                        <td>מחיר</td>
+                    </tr>
+                </thead>
+                <tbody id="myGoalsTbody">
+
+                </tbody>
+            </table>
+        </section> 
+        <section id='myOrderform'>
+            <div > full name<input id="fullName" type="text"></div>
+            <div > Travel code<input id="travelCode" type="text"></div>
+            <div > ID<input id="id" type="text"></div>
+            <div > Number of passengers<input id="NumberOfPassengers" type="text"></div>
+            <button id="BookATrip" onclick="BookATrip()"> Book a trip</button>
+        </section>  
+    </div>
+    <footer>
+        <section id='mySummary' onclick="a.aaa()">
+                <table dir="rtl" >
+                    <thead>
+                        <tr>
+                            <td>מספר הזמנה </td>
+                            <td>שם נוסע</td>
+                            <td>ת.ז</td>
+                            <td>יעד נסיעה </td>
+                            <td>מספר נוסעים</td>
+                            <td>סה''כ לתשלום</td>
+                        </tr>
+                    </thead>
+                    <tbody id="myOrdersTbody">
+                        
+                    </tbody>
+                </table>
+        </section> 
+        <section id='myOrders'>
+                 <div >
+                     <div id="mydiv1">
+                        חפש לפי
+                        <br>
+                     <select id="mySelect" size="2" visbil="now">
+                        <option value="1" onclick="DefinitionOfBrowsing(this.text)" > שם נוסע </option>
+                        <option value="2" onclick="DefinitionOfBrowsing(this.text)"> ת.ז נוסע </option>
+                        <option value="3" onclick="DefinitionOfBrowsing(this.text)"> יעד נסיעה  </option>
+                        <option value="4" onclick="DefinitionOfBrowsing(this.text)"> קוד נסיעה </option>
+                    </select>
+                </div>
+                     <div id="mydiv2">
+                        <br>   
+                     <button onclick="myybutton()">חיפוס</button>
+                     <input type="text" id="mybutton1">
+                    </div>
+                 </div>
+                 <table id="myytable" dir="rtl">
+                     
+                 </table>
+        </section> 
+    </footer>
+   
+    <script src="myTabel.js"></script>
+    
+</body>
+</html>
